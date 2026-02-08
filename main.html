@@ -28,8 +28,9 @@
                 </div>
                 <div class="search-section ">
                     <form method="get" class="border rounded-pill d-flex ">
-                        <input class="search-input remove-default border-end ps-4 " placeholder="Search Looking For ?">
-                        <select class="search-catergory remove-default px-3 py-3" name="category">
+                        <input class="search-input remove-default-form border-end ps-4 "
+                            placeholder="Search Looking For ?">
+                        <select class="search-catergory remove-default-form px-3 py-3" name="category">
                             <option value="All category">All category </option>
                             <option value="category 1">category 1</option>
                             <option value="category 2">category 2</option>
@@ -58,7 +59,7 @@
         <!-- top bar section end-->
         <!-- navbar section start-->
         <div class="container-fluid nav-bar p-0">
-            <div class="row px-5 primary-color align-items-center">
+            <div class="row gx-0 px-5 primary-color align-items-center">
                 <div class="col-3 d-none d-lg-block">
                     <nav class="navbar navbar-light position-relative">
                         <button class="navbar-toggler border-0 w-100 fs-4 px-0 text-start collapsed shadow-none"
@@ -103,7 +104,7 @@
                         </div>
                     </nav>
                 </div>
-                <div class="col-12 col-lg-9">
+                <div class="col-12 col-lg-9 p-2 p-lg-0">
                     <nav class="navbar navbar-expand-lg navbar-light">
                         <a class="fw-bold text-light remove-default fs-3 d-lg-none" href="#"><span
                                 class="text-danger"><i class="fa fa-shopping-bag"></i></span> Electro</a>
@@ -112,7 +113,7 @@
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse" id="navsupportcontent">
-                            <ul class=" navbar-nav ms-auto d-flex gap-4 me-auto ">
+                            <ul class=" navbar-nav ms-auto d-flex gap-lg-4 me-auto mb-3 mb-lg-0">
                                 <li class="nav-item ">
                                     <a class="nav-link fw-bold active" href="#">Home</a>
                                 </li>
@@ -123,21 +124,24 @@
                                     <a class="nav-link fw-bold" href="#">Single page</a>
                                 </li>
                                 <li class="nav-item dropdown">
-                                    <a href="#" class="nav-link dropdown-toggle fw-bold" role="button" aria-expanded="false" data-bs-toggle="dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle fw-bold" role="button"
+                                        aria-expanded="false" data-bs-toggle="dropdown">
                                         Pages
                                     </a>
                                     <ul class="dropdown-menu border-0">
-                                        <li class="dropdown-item"><a href="#" class="remove-default ">Best seller</a></li>
+                                        <li class="dropdown-item"><a href="#" class="remove-default ">Best seller</a>
+                                        </li>
                                         <li class="dropdown-item"><a href="#" class="remove-default ">Cart Page</a></li>
                                         <li class="dropdown-item"><a href="#" class="remove-default ">Checkout</a></li>
                                     </ul>
                                 </li>
-                                  <li class="nav-item">
+                                <li class="nav-item">
                                     <a class="nav-link fw-bold" href="#">Contact</a>
                                 </li>
                             </ul>
-                            <a class="border border-light border-2 remove-default rounded-pill py-2 px-3  fs-5 contact-no">
-                                <i class="fa fa-mobile fs-3 "></i>  +0123 456 7890
+                            <a
+                                class="border border-light border-2 remove-default rounded-pill py-2 px-3  fs-5 contact-no mb-3 mb-lg-0 text-light ">
+                                <i class="fa fa-mobile fs-3 "></i> +0123 456 7890
                             </a>
 
                         </div>
@@ -151,7 +155,62 @@
     <!--header section end-->
     <!--Main section start-->
     <main>
+        <!--Hero section start-->
+        <div class="hero-section container-fluid p-0">
+            <div class="row w-100 gx-0">
+                <div class="col-12 col-lg-7 col-xl-9 bg-light">
+                    <div id="carouselExampleAutoplaying" class="carousel slide " data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item py-5 active ">
+                                <div class="row gx-0 ">
+                                    <div class="hero-carousel-image col-12 col-xl-6">
+                                        <img src="./img/carousel-1.png" class="img-fluid w-100" alt="laptop">
+                                    </div>
+                                    <div class="hero-content col-12 col-xl-6 p-3">
+                                        <div class="hero-desc">
+                                            <h3>Save upto a $400</h3>
+                                            <h1>On selected laptops & desktops or smartphones</h1>
+                                            <p class="text-secondary mb-5">Terms and Conditions Apply</p>
+                                            <a href="#"
+                                                class="primary-color remove-default rounded-pill py-3 px-4 text-light">Shop
+                                                Now</a>
+                                        </div>
+                                    </div>
+                                </div>
 
+                            </div>
+                            <div class="carousel-item py-5">
+                                <div class="row gx-0">
+                                    <div class="hero-carousel-image col-12 col-xl-6">
+                                        <img src="./img/carousel-2.png" class="img-fluid w-100" alt="laptop">
+                                    </div>
+                                    <div class="hero-content col-12 col-xl-6 p-3">
+                                        <div class="hero-desc">
+                                            <h3>Save upto a $200</h3>
+                                            <h1>On selected laptops & desktops or smartphones</h1>
+                                            <p class="text-secondary mb-5">Terms and Conditions Apply</p>
+                                            <a href="#"
+                                                class="primary-color remove-default rounded-pill py-3 px-4 text-light">Shop
+                                                Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                     
+                    </div>
+                       <div class="carousel-controls float-end me-5 mb-3 d-flex gap-4">
+                            <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                                &larr;
+                            </button>
+                            <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                                &rarr;
+                            </button>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <!--Hero section end-->
     </main>
     <!--Main section end-->
     <!--Footer section start-->
